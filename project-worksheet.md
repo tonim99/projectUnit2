@@ -35,7 +35,7 @@ meta": {
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [add link to your wireframes]()
+- [https://www.figma.com/file/JGW28BrVXUjCOHdNJqwz6W/Untitled?node-id=0%3A1]()
 - [https://docs.google.com/drawings/d/1G5UeUqxyZw6PiOo8dZhPyKnb8Lehl8P47gFreboedmQ/edit?usp=sharing]()
 
 
