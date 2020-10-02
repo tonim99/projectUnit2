@@ -50,6 +50,8 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### PostMVP EXAMPLE
 
+- add Thesaurus
+- add sidebar from nav w/choices for Dictionary/Thesaurus 
 - 
 
 ## Components
