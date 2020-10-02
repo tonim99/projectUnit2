@@ -36,7 +36,7 @@ meta": {
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
 - [add link to your wireframes]()
-- [add link to your react architecture]()
+- [https://docs.google.com/drawings/d/1G5UeUqxyZw6PiOo8dZhPyKnb8Lehl8P47gFreboedmQ/edit?usp=sharing]()
 
 
 ### MVP/PostMVP - 5min
