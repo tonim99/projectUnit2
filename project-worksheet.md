@@ -60,10 +60,10 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Component | Description | 
 | --- | :---: |  
 | App | This will make the initial data pull and include React Router| 
-| Header | This will render the header include the nav | 
-| Dashboard | This will render the search input box and instructions to user |
+| Header | This will render the header and title | 
+| Dashboard | This will render the instructions and example to user |
 | Information | This will render the definitions and audio | 
-| Footer | This will render the footer include the nav | 
+| Form | This will render the search input box | 
 
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
@@ -71,13 +71,13 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Set Up Components | H | 3 hrs | |
-| Make API call | H | 3hrs | | |
-| Working with API | H | 3hrs | | |
-| Rendering data to Dashboard| H | 3hrs | | |
-| Working with hooks | H | 3hrs | | |
-| Adding Form | H | 3hrs | | |
+| Make API call | H | 3 hrs | | |
+| Working with API | H | 3 hrs | | |
+| Rendering data to Dashboard| H | 3 hrs | | |
+| Working with hooks | H | 3 hrs | | |
+| Adding Form | H | 3 hrs | | |
 | Styling with SCSS | H | 3 hrs | |
-| Total | H | 21hrs| | |
+| Total | H | 21 hrs| | |
 
 ## Additional Libraries
  SCSS  
