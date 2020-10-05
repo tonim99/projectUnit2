@@ -7,7 +7,7 @@
 
 ## Project Description
 
-Dictionary app with audio pronounciation pulled from Merriam Webster API
+Dictionary app with audio pronunciation pulled from Merriam Webster API
 
 ## API
 
