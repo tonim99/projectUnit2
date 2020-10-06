@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { Route, Link } from "react-router-dom"
 import Header from "./Header"
@@ -10,7 +10,7 @@ import WordInfo from './WordInfo';
 
 function App() {
   	const [wordData, setWordData] = useState([]);
-	
+	console.log('this is wordData - ', wordData)
 
 
   	const handleSubmit = (word) => {

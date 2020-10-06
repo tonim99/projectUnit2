@@ -2,7 +2,7 @@ import React from "react"
 
 const Header =(props)=> {
     return (
-        <header>Header w/title and nav?</header>
+        <header>My Quick Dictionary</header>
     )
 }
 export default Header

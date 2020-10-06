@@ -9,6 +9,7 @@ export default function Word ({word}) {
                 <div>
 
                     <h1>{word.hwi.hw}</h1>
+                    <p>{word.fl}</p>
                     {
                         word.shortdef.map((def, index) => {
                             return (<p>{def}</p>)
