@@ -1,8 +1,7 @@
 import React from "react"
-
 const Header =(props)=> {
     return (
-        <header>My Quick Dictionary</header>
+        <h1>My Dictionary</h1>
     )
 }
 export default Header
