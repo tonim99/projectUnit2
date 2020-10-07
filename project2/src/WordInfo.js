@@ -9,7 +9,7 @@ const WordInfo = ({wordData}) => {
             {
                 wordData && 
                 wordData.map((word, index) => {
-                    console.log('this is word.hwi in wordData', word);
+                    console.log('this is word.hwi.hw in wordData', word.hwi.hw)
                     return (
                       <Word 
                       key={index}

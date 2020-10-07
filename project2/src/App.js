@@ -7,7 +7,12 @@ import WordInfo from './WordInfo';
 import Main from './Main'
 function App() {
 
-  	const [wordData, setWordData] = useState([])
+	//if <input> is empty string do nothing
+	//else if word is not found return <input> is not a word
+	//else render the definitions
+	
+	const [wordData, setWordData] = useState([])
+	  
   	const handleSubmit = (word) => {
 	
 		let dictionaryUrl = `https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?key=ded20abd-0943-4f6c-bc39-7a0b56aa660e`;
@@ -22,9 +27,9 @@ function App() {
 				return (
 					<div className='App'>
 						<nav className='Header'>
-							<Link to='/'>
+							{/* <Link to='/'> */}
 								<Header />
-							</Link>
+							{/* </Link> */}
 						</nav>
 						<div className='Search'>
 							<Form handleSubmit={handleSubmit} />
