@@ -12,6 +12,7 @@ const WordInfo = ({wordData}) => {
                     console.log('this is word.hwi in wordData', word);
                     return (
                       <Word 
+                      key={index}
                       word={word}/>
                     )
                 })

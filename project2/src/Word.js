@@ -8,7 +8,7 @@ export default function Word ({word}) {
 				<p>{word.fl}</p>
                 <p></p>
 				{word.shortdef.map((def, index) => {
-					return <p>{def}</p>;
+					return <p key={index}>{def}</p>;
 				})}
 			</div>
 		);
