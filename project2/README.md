@@ -1,19 +1,18 @@
 # My Dictionary App 
-===================
+
 
 This is a dictionary app that uses the Merriam-Webster Collegiate Dictionary API. 
 
 # Features
-===========
+
 
 # Tech used
-============
-
 
 Built with 
 
 
 -React
+
 -SCSS
 
 # API Reference
