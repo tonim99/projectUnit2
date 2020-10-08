@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import './App.scss';
 import { Route, Link, Switch } from "react-router-dom"
 import Header from "./Header"
 import Form from "./Form"
@@ -17,7 +17,7 @@ function App() {
 	
 		let dictionaryUrl = `https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?key=ded20abd-0943-4f6c-bc39-7a0b56aa660e`;
 		
-  		word = '' ? null : 
+  		word = '' ? null: 
 			fetch(dictionaryUrl)
 			.then((res) => res.json())
 			.then((data) => {
