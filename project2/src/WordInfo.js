@@ -1,28 +1,27 @@
 import React from "react"
 import {Link, Route} from "react-router-dom"
-import Word from './Word'
 const WordInfo = ({wordData}) => {
 
-    console.log('this is wordData in WordInfo - ', wordData)
-
     return (
-        <div>
+        <ol>
             {
                 wordData && 
                 wordData.map((word, index) => {
-                    console.log('this is word in WordInfo ', word)
-                    return (				
+                    return (
                         <div key={index}>
-                                    <p>
-                                        {word.hwi.hw}
-                                        <span> ({word.fl})</span>
-                                    </p>
-                            <Word key={index} word={word} />
-                        </div>						
+												
+                            <Link to={`/words/${word.meta.id}`}>
+                                <li>
+                                    {word.hwi.hw}
+                                    <span> ({word.fl})</span>
+                                </li>
+                            </Link>
+											
+                        </div>
                     );
                 })
             }
-        </div>
+        </ol>
     )
 }
 

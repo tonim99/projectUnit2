@@ -1,25 +1,20 @@
 import React from "react"
 
-const Word = ({wordData}) => {
-    
+function Word(props) {
+
+	let definition = props.words.filter((word) => {
+		return word.meta.id === props.match.params.definition;
+	});
+	console.log("definition", definition)
+	// console.log('word - props- ', props)
+
     return (
 		<div>
 			{
-			wordData &&
-			wordData.map((word, index) => {
-				console.log('this is word in Word - ', word);
-					return (
-						<div>
-							{/* <h1>{word.hwi.hw}</h1>
-							<p>{word.fl}</p> */}
-							{word.shortdef.map((def, index) => {
-								return <p key={index}>{def}</p>
-							})}
-						</div>
-					);
-				})
+				definition[0] &&
+			<p>{definition[0].shortdef[0]}</p>
 			}
 		</div>
-	);
-}
-export default Word
+		);
+	}
+	export default Word
