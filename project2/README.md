@@ -8,7 +8,7 @@ This is a dictionary app that uses the Merriam-Webster Collegiate Dictionary API
 
 # Tech used
 
-Built with 
+### Built with 
 
 
 -React
