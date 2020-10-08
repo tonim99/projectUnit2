@@ -3,8 +3,8 @@ import './App.css';
 import { Route, Link, Switch } from "react-router-dom"
 import Header from "./Header"
 import Form from "./Form"
-import WordInfo from './WordInfo';
 import Main from './Main'
+import WordInfo from './WordInfo'
 function App() {
 
 	//if <input> is empty string do nothing
@@ -18,26 +18,25 @@ function App() {
 		let dictionaryUrl = `https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?key=ded20abd-0943-4f6c-bc39-7a0b56aa660e`;
 		
   		word = '' ? null : 
-		fetch(dictionaryUrl)
+			fetch(dictionaryUrl)
 			.then((res) => res.json())
 			.then((data) => {
 				console.log('this is data- ', data);	
 				setWordData(data)})
+				console.log("this is wordData", wordData)
 			}	
 				return (
 					<div className='App'>
-						<nav className='Header'>
-							{/* <Link to='/'> */}
-								<Header />
-							{/* </Link> */}
-						</nav>
-						<div className='Search'>
-							<Form handleSubmit={handleSubmit} />
-						</div>
-						<main className='Dashboard'>
-							<Main />
-							{wordData.length <= 0 ? null : <WordInfo wordData={wordData} />}
-						</main>
+						<Header />
+						<Form handleSubmit={handleSubmit} />
+						<Switch>
+							<Route exact path='/'>
+								<Main />
+							</Route>
+							<Route path='/words'>
+								{wordData.length <= 0 ? null : <WordInfo wordData={wordData} />}
+							</Route>
+						</Switch>
 					</div>
 				);
 }
