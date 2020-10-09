@@ -3,7 +3,6 @@ import './App.scss';
 import { Route, Switch } from "react-router-dom"
 import Header from "./Header"
 import Form from "./Form"
-import Main from './Main'
 import WordInfo from './WordInfo'
 import Word from './Word'
 function App() {
@@ -22,9 +21,12 @@ function App() {
 	}	
 
 	return (
-		<div className='App'>
-			<Header /> 
-			<Main />
+		<div className='app'>
+			<Header />
+			<p>
+				Welcome to My Dictionary! Search for a word to see definitions, parts of
+				speech, pronunciations, and alternate uses.
+			</p>
 			<Form handleSubmit={handleSubmit} />
 			<Switch>
 				<Route

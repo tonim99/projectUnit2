@@ -14,7 +14,7 @@ const Form =(props)=> {
   };
   
   return (
-		<div className='Form'>
+		<div className='form'>
 			<form onSubmit={handleSubmit}>
 				<input
 					className='text'
