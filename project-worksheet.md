@@ -80,7 +80,6 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Adding Form | H | 3 hrs | 1 hr | |
 | Styling with SCSS | H | 3 hrs | 9 hrs |
 |Debugging| H | 3 hours| 15 hrs |
-|Lecture reviews/Reading/Research/Tutorials| | | 20 hrs ||
 | Total | H | 24 hrs| 48 hrs | |
 
 ## Additional Libraries
