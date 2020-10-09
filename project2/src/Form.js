@@ -17,12 +17,13 @@ const Form =(props)=> {
   return (
 		<form className = "form" onSubmit={handleSubmit}>
 			<input
+				className= 'text'
 				type='text'
 				placeholder='My Word'
 				value={definition}
   	      		onChange={handleChange}
 			/>
-			<input type='submit' value='Find My Word' />
+			<input className= 'button' type='submit' value='Find My Word' />
 		</form>
 	);
 }

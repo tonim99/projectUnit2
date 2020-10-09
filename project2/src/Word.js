@@ -9,12 +9,11 @@ function Word(props) {
 	// console.log('word - props- ', props)
 
     return (
-		<div>
-			{
-				definition[0] &&
-			<p>{definition[0].shortdef[0]}</p>
-			}
-		</div>
+			<div className='Definition'>
+				{definition[0] && (
+					<p>{definition[0].shortdef[0]}</p>
+				)}
+			</div>
 		);
 	}
 	export default Word

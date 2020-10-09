@@ -1,6 +1,65 @@
+$violet-crayola: #963484ff;
+$true-blue: #3066beff;
+$french-sky-blue: #60afffff;
+$capri: #28c2ffff;
+$electric-blue: #2af5ffff;
+
+
+body {
+  
+
+}
 .App {
-  text-align: center;
+ 
+}
+
+.Header {
+  background: $violet-crayola;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+    h1 {
+      color: white;
+      margin-left: 15px;
+    }
+}
+.Main {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  color: $true-blue;
+  padding: 10px;
 }
 .form {
-  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+  margin-top: 10px;
+  margin-left: 30px;
+  border: 2px solid white;
+  padding: 10px;
+
+  input{
+    padding: 10px;
+  }
+  .button {
+    background: $violet-crayola;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+  }
+}
+ol {
+  list-style-type: none;
+  li {
+    
+  }
+
+}
+.Definition {
+  margin-left: 15px;
+  
 }
