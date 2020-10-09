@@ -50,9 +50,9 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### PostMVP EXAMPLE
 
+- add pronunciation audio
 - add Thesaurus
 - add sidebar from nav w/choices for Dictionary/Thesaurus 
-- 
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
