@@ -89,7 +89,11 @@ Time frames are also key in the development cycle.  You have limited time to cod
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+{
+  props.words[0] &&
+  <h1>{props.words[0].hwi.hw}</h1>
 }
+{definition[0] && (
+  <p>{definition[0].shortdef[0]}</p>
+)}
 ```
