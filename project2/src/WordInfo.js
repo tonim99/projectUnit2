@@ -1,7 +1,6 @@
 import React from "react"
 import {Link, Route} from "react-router-dom"
 const WordInfo = ({wordData}) => {
-console.log(wordData)
     return (
         <div className= 'wordList'>
             <ol>
@@ -13,7 +12,6 @@ console.log(wordData)
                                     to={`/words/${word.meta.id}`}
                                     style={{
                                         textDecoration: 'none',
-                                        
                                     }}>
                                     {word.shortdef.length === 0 ? null : (
                                         <li>

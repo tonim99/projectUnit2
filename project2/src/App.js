@@ -9,12 +9,7 @@ import Word from './Word'
 function App() {
 	
 	const [wordData, setWordData] = useState([])
-	//new state  ? setWordData ('')
-	const [clearSearch, setClearSearch] = useState([])
-
-	const handleClick = () => {
-		setClearSearch()
-	}
+	
   	const handleSubmit = (word) => {
 	
 		let dictionaryUrl = `https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?key=ded20abd-0943-4f6c-bc39-7a0b56aa660e`;
@@ -23,16 +18,12 @@ function App() {
 			fetch(dictionaryUrl)
 			.then((res) => res.json())
 			.then((data) => {
-				// console.log('this is data- ', data);	
-				//when setting new setWordData refresh? or redirect to '/'
 				setWordData(data)})			
 	}	
 
-	// console.log('this is wordData App - ', wordData);
 	return (
 		<div className='App'>
-			{/* clicking on header should clear state and go back to '/' */}
-			<Header handleClick={handleClick}/> 
+			<Header /> 
 			<Main />
 			<Form handleSubmit={handleSubmit} />
 			<Switch>

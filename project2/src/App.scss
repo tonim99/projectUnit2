@@ -4,62 +4,104 @@ $french-sky-blue: #60afffff;
 $capri: #28c2ffff;
 $electric-blue: #2af5ffff;
 
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Playfair Display', serif;
 
 body {
-  
-
+  background: $french-sky-blue;
+  min-width: 320px;
 }
 .App {
  
 }
 
 .Header {
-  background: $violet-crayola;
+  background: $true-blue;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 2px solid white;
+  
     h1 {
       color: white;
       margin-left: 15px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 30px;
     }
 }
 .Main {
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 5px;
-  color: $true-blue;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 10px;
+  background: $french-sky-blue;
+  color: white;
   padding: 10px;
 }
-.form {
+form{
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 75%;
   margin-top: 10px;
-  margin-left: 30px;
-  border: 2px solid white;
+  margin-left: 15px;
   padding: 10px;
 
   input{
     padding: 10px;
-  }
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+    border-radius: 5px;
+   
+    }
+  
   .button {
-    background: $violet-crayola;
+    background: $true-blue;
     font-size: 14px;
     font-weight: bold;
     color: white;
     border-radius: 5px;
   }
 }
+
 ol {
   list-style-type: none;
   li {
-    
+    font-family: 'Montserrat', sans-serif;
+    span{
+      font-style: italic;
+      color: rgb(51, 50, 50);
+    }
   }
 
 }
+
 .Definition {
-  margin-left: 15px;
+  margin: 35px 15px 15px ;
+  font-family: 'Playfair Display', serif;
+  color: rgb(45, 50, 66); 
+}
+@media only screen and (min-width: 425px) {
+  form {
+   margin: auto;
+    width: 50%;
+    
+    .button {
+      margin-left: 20px;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  
+}
+
+@media only screen and (min-width: 1024px) {
+  
+}
+
+@media only screen and (min-width: 1440px) {
   
 }

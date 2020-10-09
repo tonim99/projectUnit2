@@ -5,8 +5,6 @@ function Word(props) {
 	let definition = props.words.filter((word) => {
 		return word.meta.id === props.match.params.definition;
 	});
-	console.log("definition", definition)
-	// console.log('word - props- ', props)
 
     return (
 			<div className='Definition'>
