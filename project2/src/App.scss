@@ -10,14 +10,12 @@ $electric-blue: #2af5ffff;
 body {
   background: $french-sky-blue;
   min-width: 320px;
-}
-.App {
- 
+  width: 100%;
 }
 
 .Header {
   background: $true-blue;
-  width: 100%;
+  width: auto;
   padding-top: 10px;
   padding-bottom: 10px;
   
@@ -40,7 +38,7 @@ body {
   padding: 10px;
 }
 form{
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: row;
   margin-top: 10px;
@@ -55,7 +53,9 @@ form{
     border-radius: 5px;
    
     }
-  
+  input[type=submit] {
+    cursor: pointer;
+  }
   .button {
     background: $true-blue;
     font-size: 14px;
@@ -82,26 +82,34 @@ ol {
   font-family: 'Playfair Display', serif;
   color: rgb(45, 50, 66); 
 }
+
 @media only screen and (min-width: 425px) {
-  form {
-   margin: auto;
-    width: 50%;
+  h1 {
+    text-align: center;
+  }
+  // form {
+
+  //  margin-left: 250px;
+  //  width: 100%;
     
-    .button {
-      margin-left: 20px;
-    }
+  //   .button {
+  //     margin-left: 20px;
+  //   }
+  // }
+  ol {
+    text-align: center;
   }
 }
 
 
-@media only screen and (min-width: 768px) {
+// @media only screen and (min-width: 768px) {
   
-}
+// }
 
-@media only screen and (min-width: 1024px) {
+// @media only screen and (min-width: 1024px) {
   
-}
+// }
 
-@media only screen and (min-width: 1440px) {
+// @media only screen and (min-width: 1440px) {
   
-}
+// }
