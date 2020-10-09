@@ -1,5 +1,5 @@
 import React from "react"
-import {Link, Route} from "react-router-dom"
+import {Link} from "react-router-dom"
 const WordInfo = ({wordData}) => {
     return (
         <div className= 'wordList'>
