@@ -74,8 +74,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: | :---: |
 | Set Up Components | H | 3 hrs |4 hrs | |
 | Make API call | H | 3 hrs | 3 hrs | |
-| Working with API | H | 3 hrs | 6 hrs| |
-| Rendering data to Dashboard| H | 3 hrs | 5 hrs | |
+| Rendering data to Dashboard| H | 3 hrs | 11 hrs | |
 | Working with hooks | H | 3 hrs | 4 hrs | |
 | Adding Form | H | 3 hrs | 1 hr | |
 | Styling with SCSS | H | 3 hrs | 6 hrs |
