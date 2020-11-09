@@ -5,13 +5,15 @@ import Header from "./Header"
 import Form from "./Form"
 import WordInfo from './WordInfo'
 import Word from './Word'
+
 function App() {
+	const key = `${process.env.REACT_APP_API_KEY}`;
 	
 	const [wordData, setWordData] = useState([])
 	
   	const handleSubmit = (word) => {
 	
-		let dictionaryUrl = `https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?key=ded20abd-0943-4f6c-bc39-7a0b56aa660e`;
+		let dictionaryUrl = `https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?key=${key}`;
 		
   		word = '' ? null: 
 			fetch(dictionaryUrl)
