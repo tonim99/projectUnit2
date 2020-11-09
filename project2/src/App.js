@@ -7,13 +7,13 @@ import WordInfo from './WordInfo'
 import Word from './Word'
 
 function App() {
-	const key = `${process.env.REACT_APP_API_KEY}`;
+	const REACT_APP_API_KEY = `${process.env.REACT_APP_API_KEY}`;
 	
 	const [wordData, setWordData] = useState([])
 	
   	const handleSubmit = (word) => {
 	
-		let dictionaryUrl = `https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?key=${key}`;
+		let dictionaryUrl = `https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?key=${REACT_APP_API_KEY}`;
 		
   		word = '' ? null: 
 			fetch(dictionaryUrl)
