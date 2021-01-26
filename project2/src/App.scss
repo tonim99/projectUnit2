@@ -9,9 +9,6 @@ $playfair-display: 'Playfair Display', serif;
 
 html {
 	height: 100%;
-	// background: $french-sky-blue;
-	// background-image: url('https://img.freepik.com/free-photo/grunge-vintage-old-paper-background_1373-431.jpg?size=626&ext=jpg');
-	// background-position: center;
 	background-size: 100%;
 	background-repeat: no-repeat;
   min-width: 320px;
@@ -29,8 +26,7 @@ p {
 	padding: 10px;
 }
 .header {
-	// background: $true-blue;
-	background-image: url('https://lh3.googleusercontent.com/proxy/2Ml3ZZSehyeMbpccewvr9jWNVbspE9hi62OJrsK0vQCAbWaV_X9JOTJMkIabwHuRgHTGMNgI8Q9R1Nph7P5M0lbF7aSORbzMrSfDuigVK8NJHKqlI0MT-nxTPVU1qp8');
+	background-image: linear-gradient(to left,rgba(48, 32, 26, 1), rgb(125, 112, 79));
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
@@ -70,7 +66,7 @@ form {
 
 	.button {
 		// background: $violet-crayola;
-		background: #30201a;
+		background: rgb(48, 32, 26);
 		padding: 5px;
 		font-size: 0.75em;
 		font-weight: bold;
