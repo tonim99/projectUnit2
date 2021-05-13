@@ -3,9 +3,9 @@ import {Link} from "react-router-dom"
 
 const Header =(props)=> {
     return (
-			<nav className='header'>
-				<Link to='/'>
-					<h1 className='title'>My Dictionary</h1>
+			<nav className='nav'>
+				<Link to='/' className='nav__link'>
+					<h1 className='nav__link-item'>My Dictionary</h1>
 				</Link>
 			</nav>
 		);

@@ -1,36 +1,34 @@
 import React, { useState } from 'react';
 import './App.scss';
-import { Route, Switch } from "react-router-dom"
+// import { Route, Switch } from "react-router-dom"
 import Header from "./Header"
-import Form from "./Form"
-import WordInfo from './WordInfo'
-import Word from './Word'
+// import Form from "./Form"
+import Main from './Main'
+// import WordInfo from './WordInfo'
+// import Word from './Word'
 
 function App() {
-	const REACT_APP_API_KEY = `${process.env.REACT_APP_API_KEY}`;
+	// const REACT_APP_API_KEY = `${process.env.REACT_APP_API_KEY}`;
 	
-	const [wordData, setWordData] = useState([])
+	// const [wordData, setWordData] = useState([])
 	
-  	const handleSubmit = (word) => {
+  	// const handleSubmit = (word) => {
 	
-		let dictionaryUrl = `https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?key=${REACT_APP_API_KEY}`;
+	// 	let dictionaryUrl = `https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?key=${REACT_APP_API_KEY}`;
 		
-  		word = '' ? null: 
-			fetch(dictionaryUrl)
-			.then((res) => res.json())
-			.then((data) => {
-				setWordData(data)})			
-	}	
+  	// 	word = '' ? null: 
+	// 		fetch(dictionaryUrl)
+	// 		.then((res) => res.json())
+	// 		.then((data) => {
+	// 			setWordData(data)})			
+	// }	
 
 	return (
 		<div className='app'>
 			<Header />
-			<p>
-				Welcome to My Dictionary! Search for a word to see definitions, parts of
-				speech, pronunciations, and alternate uses.
-			</p>
-			<Form handleSubmit={handleSubmit} />
-			<Switch>
+			<Main />
+			{/* <Form handleSubmit={handleSubmit} /> */}
+			{/* <Switch>
 				<Route
 					path='/words/:definition'
 					render={(routerProps) => <Word {...routerProps} words={wordData} />}
@@ -38,7 +36,7 @@ function App() {
 				<Route path='/'>
 					{wordData.length <= 0 ? null : <WordInfo wordData={wordData} />}
 				</Route>
-			</Switch>
+			</Switch> */}
 		</div>
 	);
 }

@@ -1,73 +1,70 @@
-$violet-crayola: #963484ff;
-$true-blue: #3066beff;
-$french-sky-blue: #60afffff;
-$capri: #28c2ffff;
-$electric-blue: #2af5ffff;
+// VARIABLES
+
 
 $montserrat: 'Montserrat', sans-serif;
 $playfair-display: 'Playfair Display', serif;
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 html {
-	height: 100%;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	min-width: 320px;
-	background-color: #d4c294;
-}
-.app {
-	width: 100%;
-}
-p {
-	width: 70%;
+	font-size: 62.5%;
 	font-family: $montserrat;
-	font-size: 1em;
-	margin-top: 10px;
-	color: black;
-	padding: 10px;
 }
-.header {
-	background-image: linear-gradient(
-		to left,
-		rgba(48, 32, 26, 1),
-		rgb(125, 112, 79)
-	);
-	background-repeat: no-repeat;
+
+.app {
+  background: url(./assets/pencils.jpg);
 	background-size: cover;
-	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
-
-	h1 {
-		color: #ab864b;
-		text-align: right;
-		padding-right: 25px;
-		margin-left: 15px;
-		font-family: $playfair-display;
-		font-weight: bold;
-		font-size: 1.6em;
-	}
-
-	a {
-		text-decoration: none;
-	}
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 100vh;
+	min-width: 32rem;
 }
 
-form {
-	width: 75%;
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12.5rem 2.5rem 6.5rem 2.5rem;
+
+	&__link {
+		text-decoration: none;
+
+		&-item {
+			color: #3b0380;
+			padding-right: 2.5rem;
+			font-size: 4.5rem;
+		}
+	}
+}
+.main {
+	display: flex;
+	flex-direction: column;
+	padding: 0 2.5rem;
+
+	&__text {
+		font-size: 2.2rem;
+		line-height: 1.6;
+		margin-bottom: 4.5rem;
+	}
+}
+.form__container {
 	display: flex;
 	flex-direction: row;
-	margin-top: 10px;
-	margin-left: 15px;
-	padding: 10px;
+	width: 90%;
 
 	input {
-		padding: 10px;
-		border: none;
-		border-bottom: 2px solid gray;
-		outline: none;
-		border-radius: 5px;
+		padding: 2rem 4rem;
+		border: 2px solid gray;
+		border-radius: 5rem;
+		width: 75%;
 	}
-
+	input::placeholder {
+		font-size: 1.8rem;
+		text-align: left;
+	}
 	input[type='submit'] {
 		cursor: pointer;
 	}
@@ -113,10 +110,7 @@ ol {
 		text-align: center;
 		font-size: 2.75em;
 	}
-	p {
-		margin-left: 15px;
-		font-size: 1.9em;
-	}
+
 	form {
 		width: 70%;
 		input {
