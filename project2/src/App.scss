@@ -11,8 +11,8 @@ html {
 	height: 100%;
 	background-size: 100%;
 	background-repeat: no-repeat;
-  min-width: 320px;
-  background-color: #D4C294;
+	min-width: 320px;
+	background-color: #d4c294;
 }
 .app {
 	width: 100%;
@@ -26,7 +26,11 @@ p {
 	padding: 10px;
 }
 .header {
-	background-image: linear-gradient(to left,rgba(48, 32, 26, 1), rgb(125, 112, 79));
+	background-image: linear-gradient(
+		to left,
+		rgba(48, 32, 26, 1),
+		rgb(125, 112, 79)
+	);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
@@ -41,6 +45,10 @@ p {
 		font-family: $playfair-display;
 		font-weight: bold;
 		font-size: 1.6em;
+	}
+
+	a {
+		text-decoration: none;
 	}
 }
 
@@ -154,7 +162,7 @@ ol {
 			font-size: 1.5em;
 		}
 		.button {
-      padding: 10px;
+			padding: 10px;
 			font-size: 1.25em;
 		}
 	}
