@@ -19,16 +19,13 @@ function App() {
 			fetch(dictionaryUrl)
 			.then((res) => res.json())
 			.then((data) => {
-				setWordData(data)})			
+				setWordData(data)})	
+			.catch((err) => <div>{err}</div>)		
 	}	
 
 	return (
 		<div className='app'>
 			<Header />
-			<p>
-				Welcome to My Dictionary! Search for a word to see definitions, parts of
-				speech, pronunciations, and alternate uses.
-			</p>
 			<Form handleSubmit={handleSubmit} />
 			<Switch>
 				<Route
