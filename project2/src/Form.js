@@ -1,31 +1,29 @@
-import React, {useState} from 'react'
-const Form =(props)=> {
-  const [definition, setDefinition] = useState ('')
+import React from 'react'
+const Form =({setInput, setWord, input})=> {
 
-  const handleChange = (e) => {
-    const word = e.target.value
-    setDefinition(word)
-  }
-    
   const handleSubmit = (e) => {
-		e.preventDefault();
-		props.handleSubmit(definition);
-		setDefinition('');
-  };
+    try{
+		e.preventDefault()
+		setWord(input)
+	}catch(error) {
+		return <div>{error.message}</div>
+	}finally {
+		setInput('')
+	}
+  }
   
-  return (
-		<div className='form'>
-			<form onSubmit={handleSubmit}>
-				<input
-					className='text'
-					type='text'
-					placeholder='My Word'
-					value={definition}
-					onChange={handleChange}
-				/>
-				<input className='button' type='submit' value='Find My Word' />
-			</form>
-		</div>
+    return (
+		<form onSubmit={handleSubmit}>
+			<input
+				className='text'
+				type='text'
+				placeholder='Your Word'
+				value={input}
+				onChange={(e) => setInput(e.target.value)}
+			/>
+			<input className='button' type='submit' value='Find My Word' />
+		</form>
+		
 	);
 }
 
