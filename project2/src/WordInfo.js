@@ -15,7 +15,7 @@ const WordInfo = ({wordData}) => {
                                     }}>
                                     {word.shortdef.length === 0 ? null : (
                                         <li>
-                                            {word.hwi.hw}
+                                            {word.meta.id}
                                             <span> ({word.fl})</span>
                                         </li>
                                     )}
