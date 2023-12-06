@@ -1,22 +1,19 @@
 import React from "react"
 
-function Word(props) {
-	console.log(props.words[0].meta.id)
-	let definition = props.words.filter((word) => {
-		return word.meta.id === props.match.params.definition;
-	});
-
+const Word = (props) => {
     return (
 		<div className='definition'>
 			{
-			props.words[0] &&
-				<h1>{props.words[0].meta.id}</h1>
+			props.wordData[0].meta.id &&
+				<h1>{props.wordData[0].meta.id}</h1>
 
 			}
-			{definition[0] && (
-				<p>{definition[0].shortdef[0]}</p>
+			{props.wordData[0] && (
+				<p>{props.wordData[0].shortdef[0]}</p>
 			)}
 		</div>
 	);
+
 }
-	export default Word
+
+export default Word
