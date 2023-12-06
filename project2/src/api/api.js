@@ -5,8 +5,10 @@ fetch(`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?k
     .then(async (res) => {
         if(!res.ok) {
             const errorData = await res.json()
+            console.log(errorData)
             throw new Error(
-                errorData.message
+                errorData.message ? errorData.message :
+                'Invalid word. Please try again.'
             )
         }
         return res.json()
