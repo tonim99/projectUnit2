@@ -1,31 +1,37 @@
-import React from "react"
-import {Link} from "react-router-dom"
-const WordInfo = ({wordData}) => {
+import React, { useState } from "react"
+import Word from './Word'
+const WordInfo = ({wordData, error}) => {
+    const [open, setOpen] = useState(false)
     return (
         <div className= 'wordList'>
             <ol>
                 {wordData &&
                     wordData.map((word, index) => {
                         return (
+                        <React.Fragment key={index}>
                             <div key={index}>
-                                <Link
-                                    to={`/words/${word.meta.id}`}
-                                    style={{
-                                        textDecoration: 'none',
-                                    }}>
-                                    {word.shortdef.length === 0 ? null : (
+                                
+                                    {word.shortdef && (
                                         <li>
+                                            <div onClick={() => setOpen(true)}>
+
                                             {word.meta.id}
-                                            <span> ({word.fl})</span>
+                                            {word.fl &&
+                                            <span> ({word.fl})</span>}
+                                            </div>
                                         </li>
                                     )}
-                                </Link>
+                                
+                           {open && word && <Word wordData={wordData}/>}
                             </div>
-                        );
-                    })}
+                           
+                        </React.Fragment> 
+                           
+                           );
+                        })}
             </ol>
         </div>
-    );
+        )
 }
 
 export default WordInfo
