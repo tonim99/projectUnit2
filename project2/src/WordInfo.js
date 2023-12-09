@@ -9,26 +9,21 @@ const WordInfo = ({wordData, error}) => {
                     wordData.map((word, index) => {
                         return (
                         <React.Fragment key={index}>
-                            <div key={index}>
-                                
-                                    {word.shortdef && (
-                                        <li>
-                                            <div onClick={() => setOpen(true)}>
-
-                                            {word.meta.id}
-                                            {word.fl &&
+                            <div>
+                                {word.shortdef[index] && (
+                                    <li>
+                                        <div onClick={() => setOpen(true)}>
+                                        {word.meta.id}
+                                        {word.fl &&
                                             <span> ({word.fl})</span>}
-                                            </div>
-                                        </li>
-                                    )}
-                                
-                           {open && word && <Word wordData={wordData}/>}
+                                        </div>
+                                    </li>
+                                )}   
+                            {open && word && <Word wordData={wordData[index]} error={error}/>}
                             </div>
-                           
                         </React.Fragment> 
-                           
-                           );
-                        })}
+                    );
+                })}
             </ol>
         </div>
         )
