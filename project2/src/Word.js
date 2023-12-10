@@ -1,22 +1,15 @@
 import React from "react"
 
 const Word = (props) => {
-	console.log(props.wordData)
-	if(props.wordData){
+	console.log(props.word, props.wordData)
+	props.wordData && props.wordData.map((word, index) => {
+		console.log(word.shortdef[0])
 		return (
-			<div className='definition'>
-				{props.wordData.meta.id &&
-					<h1>{props.wordData.meta.id}</h1>
-				}
-				{props.wordData && (
-					<p>{props.wordData.shortdef[0]}</p>
-				)}
+			<div key={index} className='definition'>
+				<p>{word.shortdef[0]}</p>
 			</div>
 		);
-	} else {
-		return (<div>Something went wrong please try again.</div>)
-	}
-
+	})
 }
 
 export default Word
