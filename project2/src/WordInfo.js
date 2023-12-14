@@ -20,7 +20,9 @@ const WordInfo = (props) => {
                                         </div>
                                     </li>
                                 )}   
-                            {open && <Word wordData={props.wordData} error={props.error} word={props.word}/>}
+                                {open && <div className='definition'>
+				                    <p>{word.shortdef}</p>
+			                    </div>}
                             </div>
                         </React.Fragment> 
                     );
