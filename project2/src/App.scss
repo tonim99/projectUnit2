@@ -18,7 +18,7 @@ html {
 p {
 	width: 70%;
 	font-family: $montserrat;
-	font-size: 1em;
+	font-size: 16px;
 	margin-top: 10px;
 	color: black;
 	padding: 10px;
@@ -38,7 +38,7 @@ p {
 		color: #2c1b82;
 		font-family: $montserrat;
 		font-weight: bold;
-		font-size: 2rem;
+		font-size: 16px;
 	}
 
 	a {
@@ -67,7 +67,7 @@ form {
 		text-align: center;
 		
 		&::placeholder {
-			font-size: 1rem;
+			font-size: 16px;
 			font-weight: bold;
 			text-align: center;
 		}
@@ -76,7 +76,7 @@ form {
 	.button {
 		background: #2c1b82;
 		padding: 10px;
-		font-size: 1rem;
+		font-size: 16px;
 		font-weight: bold;
 		color: white;
 		border-radius: 50px;
@@ -90,10 +90,10 @@ ol {
 	color: black;
 	li {
 		font-family: $playfair-display;
-		font-size: 1.5em;
+		font-size: 16px;
 		line-height: 175%;
 		span {
-			font-size: 0.7em;
+			font-size: 16px;
 			font-style: italic;
 			color: rgb(51, 50, 50);
 		}
@@ -107,7 +107,7 @@ ol {
 
 	h1 {
 		color: #2c1b82;
-		font-size: 1rem;
+		font-size: 16px;
 		text-align: left;
 	}
 }
@@ -119,7 +119,7 @@ ol {
 	}
 	p {
 		margin-left: 15px;
-		font-size: 1.9em;
+		font-size: 16px;
 	}
 	form {
 		width: 70%;
@@ -128,23 +128,23 @@ ol {
 			margin: 10px;
 		}
 		input[type='text'] {
-			font-size: 1rem;
+			font-size: 16px;
 		}
 		.button {
-			font-size: 1rem;
+			font-size: 16px;
 			padding: 10px;
 		}
 	}
 	ol {
 		li {
-			font-size: 2.5em;
+			font-size: 24px;
 		}
 	}
 	.definition {
-		font-size: 1.25em;
+		font-size: 12px;
 
 		h1 {
-			font-size: 2.25em;
+			font-size: 16px;
 			text-align: left;
 		}
 	}
@@ -155,7 +155,7 @@ ol {
 		font-size: 3em;
 	}
 	p {
-		font-size: 1.75em;
+		font-size: 16px;
 	}
 	form {
 		width: 80%;
@@ -163,20 +163,20 @@ ol {
 			padding: 1%;
 		}
 		input[type='text'] {
-			font-size: 1.5em;
+			font-size: 16px;
 		}
 		.button {
 			padding: 10px;
-			font-size: 1.25em;
+			font-size: 16px;
 		}
 	}
 	ol {
 		li {
-			font-size: 2em;
+			font-size: 16px;
 		}
 	}
 	.definition {
-		font-size: 1em;
+		font-size: 16px;
 		h1 {
 			font-size: 2em;
 		}
@@ -190,16 +190,16 @@ ol {
 	}
 	p {
 		margin-left: 20px;
-		font-size: 2.1em;
+		font-size: 16px;
 	}
 
 	ol {
 		li {
-			font-size: 2em;
+			font-size: 16px;
 		}
 	}
 	.definition {
-		font-size: 1em;
+		font-size: 16px;
 		h1 {
 			margin: 20px;
 			font-size: 2.2em;
