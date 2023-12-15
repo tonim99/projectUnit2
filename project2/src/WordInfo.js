@@ -1,28 +1,25 @@
 import React, { useState } from "react"
-import Word from './Word'
 const WordInfo = (props) => {
-    const [open, setOpen] = useState(false)
+    const [word, setWord] = useState()
     
     return (
         <div className= 'wordList'>
             <ol>
                 {props.wordData &&
-                    props.wordData.map((word, index) => {
+                    props.wordData.map((wordInfo, index) => {
                         return (
                         <React.Fragment key={index}>
                             <div>
-                                {word.shortdef && (
-                                    <li>
-                                        <div onClick={() => setOpen(true)}>
-                                            {word.meta.id}
-                                            {word.fl &&
-                                                <span> ({word.fl})</span>}
-                                        </div>
-                                    </li>
-                                )}   
-                                {open && <div className='definition'>
-				                    <p>{word.shortdef}</p>
-			                    </div>}
+                                <li>
+                                    <div onClick={() => setWord(wordInfo.meta.id[index])}>
+                                        {wordInfo.meta.id}
+                                        {wordInfo.fl &&
+                                            <span> ({wordInfo.fl})</span>}
+                                <span className='definition'>
+				                    <p>{wordInfo.shortdef}</p>
+			                    </span>
+                                    </div>
+                                </li>
                             </div>
                         </React.Fragment> 
                     );
